@@ -1,6 +1,5 @@
-# nodecommands
 
-## Frequently used NodeJS and NPM commands
+# Frequently used NodeJS and NPM commands
 
 Check the npm version installed
 
