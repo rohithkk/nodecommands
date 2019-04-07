@@ -8,3 +8,13 @@ Check the npm version installed
 Update npm to latest version
 
 `sudo npm install npm@latest -g`
+
+Check the NodeJS version installed
+
+`node -v`
+
+Update NodeJS to latest stable version
+
+`npm install -g node`
+
+`npm i -g node`
