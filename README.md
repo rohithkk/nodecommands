@@ -1,5 +1,5 @@
 
-# Frequently used NodeJS and NPM commands
+# Check version and Update
 
 Check the npm version installed
 
@@ -18,3 +18,9 @@ Update NodeJS to latest stable version
 `npm install -g node`
 
 `npm i -g node`
+
+# Workspace
+
+Initiate npm in current project directory. This command creates package.json file using the answers we give.
+
+`npm init`
