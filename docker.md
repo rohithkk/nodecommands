@@ -25,3 +25,9 @@
     `docker container stop <container id>`
     
     > We don't have to type the complete container id. Usually the first 3-4 digits would be good enough to uniquely identify the container that we wish to stop out of all the currently running ones.
+    
+5. To remove all stopped containers, dangling images, unused networks,
+
+   `docker system prune`
+    
+   `docker system prune -f` or `docker system prune --force` to skip the warning.
