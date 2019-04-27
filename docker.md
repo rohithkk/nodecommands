@@ -15,4 +15,5 @@
         docker container run --publish 80:80 nginx
         
 3. Start new container in detached mode
-        
+
+    `docker container run --publish <port>:<port> --detach <image_name>`
