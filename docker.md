@@ -2,7 +2,7 @@
 
 ### Common Syntax for running Docker commands
 
-   `docker <command> <subcommand> <options>`
+   `docker < command > <sub command> [options ]`
 
 
 1. Get the Docker Client and Server version
@@ -50,5 +50,5 @@
     `docker container logs [options] <container id>`
     
     > Options:  -f                      follow the log output, 
-    >            --tail <number>         show the last <number> lines from the logs
+    >            --tail < number >         show the last <number> lines from the logs
     
