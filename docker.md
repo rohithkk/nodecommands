@@ -1,6 +1,15 @@
 # Docker Commands Quick Reference
 
-1. Start new container
+### Common Syntax for running Docker commands
+
+   `docker <command> <subcommand>`
+
+
+1. Get the Docker Client and Server version
+
+    `docker version`
+    
+2. Start new container
 
     `docker container run --publish <port>:<port> <image_name>`
     
@@ -10,23 +19,23 @@
          
         docker container run --publish 80:80 nginx
         
-2. Start new container in detached mode
+3. Start new container in detached mode
 
     `docker container run --publish <port>:<port> --detach <image_name>`
 
-3. List currently running containers
+4. List currently running containers
 
     `docker container ls`
     
     > `docker container ps` also emits the same output. This was the old syntax.
     
-4. Stop Docker container
+5. Stop Docker container
 
     `docker container stop <container id>`
     
     > We don't have to type the complete container id. Usually the first 3-4 digits would be good enough to uniquely identify the container that we wish to stop out of all the currently running ones.
     
-5. To remove all stopped containers, dangling images, unused networks,
+6. To remove all stopped containers, dangling images, unused networks,
 
    `docker system prune`
     
