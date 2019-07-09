@@ -39,6 +39,10 @@
     
     > We don't have to type the complete container id. Usually the first 3-4 digits would be good enough to uniquely identify the container that we wish to stop out of all the currently running ones.
     
+    To stop all running containers at once, run the following command
+    
+    `docker container stop $(docker container ls -aq)`
+    
 7. Remove stoped container(s)
 
    Remove a single stopped container
@@ -49,14 +53,18 @@
    
     `docker container rm <container1 id> <container2 id>  <container3 id>`
 
+   Remove all stopped containers at once, run the following command
+    
+    `docker container rm $(docker container ls -q)`
 
-To remove all stopped containers, dangling images, unused networks,
+8. To remove all stopped containers, dangling images, unused networks,
 
    `docker system prune`
     
    `docker system prune -f` or `docker system prune --force` to skip the warning.
-   
-8. View logs from a container
+ 
+
+9. View logs from a container
 
     `docker container logs [options] <container id>`
     
