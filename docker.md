@@ -95,4 +95,16 @@
      
      > The above command starts a new nginx container and immediately runs the bash command on the container. You will be able to execute other commands on the shell.
 
+    > The container stops as soon as we exit from the shell. This is because we overwrote the default command in the Dockerfile of the nginx image to "bash" which is only valid for shell lifetime.
+    
+    
+     **Option 2 - run the exec command on a running container **
+     
+     `docker container exec **-it** <image name> <command to run>`
+     
+     > Example: docker container exec -it mysql bash
+     
+     > The above command starts a new process on the currently running "mysql" container and executes the bash command on it.
+
+    > The container will continue to run even after exiting from the shell. This is a key difference between Option 1 and Option 2.
     
