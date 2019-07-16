@@ -70,4 +70,28 @@
     
     > Options:  -f                      follow the log output, 
     >            --tail < number >         show the last <number> lines from the logs
+   
+10. List processes from a container
+
+      `docker container top <container id>`
+      
+11. Display detailed config information for a container
+
+     `docker container inspect <container id>`
+     
+12. View real time performance metrics from a container
+
+    `docker container stats [container id]`
+    
+    "container id" is optional. If not passed, then the comand will output the stats from all the running containers.
+    
+13. Getting into shell inside a container  
+    
+     **Option 1 - run the container iteratively**
+     
+     `docker container run **-it** <image name> <command to run>`
+     
+     > Example: docker container run -it nginx bash
+     > The above command starts a new nginx container and immediately runs the bash command on the container. You will be able to execute other commands on the shell.
+
     
