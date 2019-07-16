@@ -92,6 +92,7 @@
      `docker container run **-it** <image name> <command to run>`
      
      > Example: docker container run -it nginx bash
+     
      > The above command starts a new nginx container and immediately runs the bash command on the container. You will be able to execute other commands on the shell.
 
     
