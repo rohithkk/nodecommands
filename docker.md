@@ -98,7 +98,7 @@
     > The container stops as soon as we exit from the shell. This is because we overwrote the default command in the Dockerfile of the nginx image to "bash" which is only valid for shell lifetime.
     
     
-     **Option 2 - run the exec command on a running container **
+     **Option 2 - run the exec command on a running container**
      
      `docker container exec **-it** <image name> <command to run>`
      
